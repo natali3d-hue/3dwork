@@ -1,0 +1,9 @@
+{
+  "auto-run-command.rules": [
+    {
+      "command": "workbench.action.tasks.runTask",
+      "args": "Avvia Next.js",
+      "when": "workspaceFolder == '3dwork'"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ export default function Header() {
 
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-8 text-white text-sm">
-          <a href="#services" className="hover:text-gray-300 transition">Servizi</a>
+          <a href="/#services" className="hover:text-gray-300 transition">Servizi</a>
 
           <a 
             href="https://www.stefanonatali.it" 
@@ -37,7 +37,7 @@ export default function Header() {
             Chi sono
           </a>
 
-          <a href="#studio" className="hover:text-gray-300 transition">Contatti</a>
+          <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
         </nav>
 
         {/* HAMBURGER MOBILE */}
@@ -52,7 +52,7 @@ export default function Header() {
       {/* MENU MOBILE */}
       {open && (
         <nav className="md:hidden flex flex-col bg-black text-white px-6 pb-4 space-y-4 text-lg border-t border-white/10">
-          <a href="#services" onClick={() => setOpen(false)}>Servizi</a>
+          <a href="/#services" onClick={() => setOpen(false)}>Servizi</a>
 
           <a 
             href="https://www.stefanonatali.it"
@@ -63,12 +63,13 @@ export default function Header() {
             Chi sono
           </a>
 
-          <a href="#studio" onClick={() => setOpen(false)}>Contatti</a>
+          <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
         </nav>
       )}
     </header>
   );
 }
+
 
 
 

@@ -4,7 +4,6 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Sections from "@/components/Sections";
 import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import SceneVariants from "@/components/SceneVariants";
 import FullScreenImage from "@/components/FullScreenImage";
@@ -31,7 +30,7 @@ export const metadata = {
 
 export default function Home() {
 
-  // ⭐ Schema.org LocalBusiness (CORRETTO)
+  // ⭐ Schema.org LocalBusiness
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -56,7 +55,7 @@ export default function Home() {
     "description": "Servizi professionali di rendering 3D fotorealistico, brochure digitali e siti web Next.js."
   };
 
-  // ⭐ Schema.org Services (CORRETTO)
+  // ⭐ Schema.org Services
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -88,7 +87,7 @@ export default function Home() {
     ]
   };
 
-  // ⭐ Schema.org FAQ (CORRETTO)
+  // ⭐ Schema.org FAQ
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -161,7 +160,6 @@ export default function Home() {
 
         <FullScreenImage />
         <CTA />
-        <Footer />
         <FloatingWhatsApp />
       </main>
     </>
