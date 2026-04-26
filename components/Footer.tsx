@@ -77,8 +77,7 @@ export default function Footer() {
 
       {/* TECHNOLOGY NOTE */}
       <p className="mt-6 text-gray-500 text-xs">
-        Sito sviluppato con Next.js ·
-      </p>
+        Sito sviluppato con tecnologia Web Framework      </p>
 
       <p className="mt-2">©2026 3D WORK™ · P.I. 03371840400</p>
     </footer>
