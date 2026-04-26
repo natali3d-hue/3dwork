@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/3dwork.it/"
+          href="https://www.instagram.com/3dwork_stefanonatali/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
