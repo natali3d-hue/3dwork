@@ -20,7 +20,7 @@ export default function Services() {
     },
     {
       title: "Visual Identity del Progetto",
-      text: "Render, brochure, materiali social e landing page dedicata.",
+      text: "Render, brochure e landing page dedicata.",
       icon: () => (
         <svg className="h-10 w-10 text-white mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5v10.5H3.75z" />
