@@ -25,7 +25,7 @@ export default function Sections() {
     {
       title: "Concept Design & Art Direction",
       text: "Diamo forma alle idee con immagini curate, moodboard e una direzione visiva chiara e coerente.",
-      img: "/Brochure-web-2-1.webp"
+      img: "/Interno.webp"
     }
   ];
 
