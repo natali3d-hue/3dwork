@@ -20,12 +20,12 @@ export default function Sections() {
     {
       title: "AI‑Enhanced Visualization",
       text: "Un flusso avanzato che combina AI e rendering 3D per accelerare la fase creativa e ottenere varianti visive in pochi minuti.",
-      img: "/AI-e-3D.webp"
+      img: "/Interno.webp?v=2"
     },
     {
       title: "Concept Design & Art Direction",
       text: "Diamo forma alle idee con immagini curate, moodboard e una direzione visiva chiara e coerente.",
-      img: "/Interno.webp"
+      img: "/Brochure-web-2-1.webp?v=2"
     }
   ];
 
