@@ -190,7 +190,7 @@ var APP_DATA = {
           "yaw": 2.606776338621036,
           "pitch": 0.507114244046381,
           "rotation": 0,
-          "target": "0-camera-muro"
+          "target": "2-camera-finestra"
         },
         {
           "yaw": 2.3463659291383054,
