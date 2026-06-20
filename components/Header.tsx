@@ -38,6 +38,16 @@ export default function Header() {
           </a>
 
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
+
+          {/* 👉 LINK AL TOUR 360° */}
+          <a 
+            href="https://www.3dwork.it/PanoTest/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300 transition font-semibold"
+          >
+            Tour 360°
+          </a>
         </nav>
 
         {/* HAMBURGER MOBILE */}
@@ -64,6 +74,16 @@ export default function Header() {
           </a>
 
           <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
+
+          {/* 👉 LINK AL TOUR 360° */}
+          <a 
+            href="https://www.3dwork.it/PanoTest/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            Tour 360°
+          </a>
         </nav>
       )}
     </header>
