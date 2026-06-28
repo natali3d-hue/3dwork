@@ -7,7 +7,7 @@ export default function Hero() {
       
       {/* IMMAGINE DI SFONDO */}
       <Image
-        src="/333.webp"
+        src="/Cucina.webp"
         alt="3D Rendering"
         fill
         className="object-cover opacity-80"
