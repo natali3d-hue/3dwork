@@ -4,7 +4,7 @@ export default function FullScreenImage() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       <Image
-        src="/Esterno Render.webp"
+        src="/Esterno.webp"
         alt="Full Screen Architecture"
         fill
         className="object-cover"
