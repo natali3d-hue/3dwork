@@ -58,7 +58,7 @@ export default function Gallery8() {
         <div className="max-w-7xl mx-auto mt-16">
           <div className="relative w-full h-[600px] rounded-lg overflow-hidden">
             <Image
-              src="/gallery/Ice.webp"   // <-- sostituisci con la tua immagine
+              src="/Ice.webp"   // <-- sostituisci con la tua immagine
               alt="Work large image"
               fill
               className="object-cover"
