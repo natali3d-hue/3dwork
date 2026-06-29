@@ -16,8 +16,10 @@ export default function Gallery8() {
   ];
 
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [bigOpen, setBigOpen] = useState(false); // <-- lightbox immagine grande
 
   const closeLightbox = () => setLightboxIndex(null);
+  const closeBig = () => setBigOpen(false);
 
   const showPrev = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -56,9 +58,12 @@ export default function Gallery8() {
 
         {/* IMMAGINE GRANDE SOTTO LA GALLERY */}
         <div className="max-w-7xl mx-auto mt-16">
-          <div className="relative w-full h-[600px] rounded-lg overflow-hidden">
+          <div
+            className="relative w-full h-[600px] rounded-lg overflow-hidden cursor-pointer"
+            onClick={() => setBigOpen(true)}
+          >
             <Image
-              src="/Ice.webp"   // <-- sostituisci con la tua immagine
+              src="/Ice.webp"
               alt="Work large image"
               fill
               className="object-cover"
@@ -67,13 +72,12 @@ export default function Gallery8() {
         </div>
       </section>
 
-      {/* LIGHTBOX */}
+      {/* LIGHTBOX GALLERY */}
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-50 animate-fadeIn"
           onClick={closeLightbox}
         >
-          {/* Immagine grande */}
           <div className="relative w-[90vw] h-[80vh]">
             <Image
               src={images[lightboxIndex]}
@@ -83,7 +87,6 @@ export default function Gallery8() {
             />
           </div>
 
-          {/* Freccia sinistra */}
           <button
             onClick={showPrev}
             className="absolute left-6 text-white text-4xl select-none"
@@ -91,7 +94,6 @@ export default function Gallery8() {
             ‹
           </button>
 
-          {/* Freccia destra */}
           <button
             onClick={showNext}
             className="absolute right-6 text-white text-4xl select-none"
@@ -99,9 +101,32 @@ export default function Gallery8() {
             ›
           </button>
 
-          {/* Pulsante chiudi */}
           <button
             onClick={closeLightbox}
+            className="absolute top-6 right-6 text-white text-3xl"
+          >
+            ✕
+          </button>
+        </div>
+      )}
+
+      {/* LIGHTBOX IMMAGINE GRANDE */}
+      {bigOpen && (
+        <div
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-50 animate-fadeIn"
+          onClick={closeBig}
+        >
+          <div className="relative w-[90vw] h-[80vh]">
+            <Image
+              src="/Ice.webp"
+              alt="Large lightbox"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          <button
+            onClick={closeBig}
             className="absolute top-6 right-6 text-white text-3xl"
           >
             ✕
