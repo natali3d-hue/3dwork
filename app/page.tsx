@@ -153,6 +153,16 @@ export default function Home() {
         <Intro />
         <Services />
         <Sections />
+
+        {/* ⭐ Featured Render inserito qui */}
+        <div className="w-full my-20">
+          <img
+            src="/Serale2.webp"
+            alt="Render architettonico serale"
+            className="w-full h-auto rounded-xl shadow-lg object-cover"
+          />
+        </div>
+
         <SceneVariants />
         <Gallery8 />
 
