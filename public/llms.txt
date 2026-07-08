@@ -1,0 +1,9 @@
+name: 3D Work
+type: Studio di rendering 3D
+url: https://www.3dwork.it
+services:
+  - rendering fotorealistico
+  - animazioni 3D
+  - render immobili
+  - render cantieri
+location: Cesena, Italia

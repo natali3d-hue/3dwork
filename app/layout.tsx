@@ -23,7 +23,25 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  alternates: {
+    canonical: "https://www.3dwork.it/",
+  },
+  other: {
+    "script:ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.3dwork.it",
+      "name": "3D Work",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.3dwork.it/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    })
+  }
 };
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
