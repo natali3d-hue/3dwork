@@ -4,50 +4,70 @@ export const metadata: Metadata = {
   title: "Rendering 3D Immobili – 3DWORK",
   description: "Rendering 3D fotorealistici per immobili residenziali, commerciali e cantieri.",
   other: {
-    "script:ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Rendering 3D Immobili",
-      "provider": {
-        "@type": "Organization",
-        "name": "3DWORK",
-        "url": "https://www.3dwork.it"
-      },
-      "areaServed": "Italia",
-      "serviceType": "Rendering 3D per immobili",
-      "description": "Rendering 3D fotorealistici per immobili residenziali e commerciali.",
-      "offers": {
-        "@type": "Offer",
-        "price": "X",
-        "priceCurrency": "EUR"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quanto costa un rendering 3D per immobili?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il costo dipende dal tipo di immobile e dal numero di viste richieste."
-          }
+    "script:ld+json": JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Rendering 3D Immobili",
+        "provider": {
+          "@type": "Organization",
+          "name": "3DWORK",
+          "url": "https://www.3dwork.it"
         },
-        {
-          "@type": "Question",
-          "name": "In quanto tempo consegni un rendering immobiliare?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I tempi medi vanno da Y a Z giorni lavorativi."
-          }
+        "areaServed": "Italia",
+        "serviceType": "Rendering 3D per immobili",
+        "description": "Rendering 3D fotorealistici per immobili residenziali e commerciali.",
+        "offers": {
+          "@type": "Offer",
+          "price": "X",
+          "priceCurrency": "EUR"
         },
-        {
-          "@type": "Question",
-          "name": "Quali file servono per iniziare un rendering immobiliare?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Posso lavorare da planimetrie, prospetti, DWG, PDF, modelli 3D o foto."
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto costa un rendering 3D per immobili?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il costo dipende dal tipo di immobile e dal numero di viste richieste."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In quanto tempo consegni un rendering immobiliare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I tempi medi vanno da Y a Z giorni lavorativi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quali file servono per iniziare un rendering immobiliare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Posso lavorare da planimetrie, prospetti, DWG, PDF, modelli 3D o foto."
+            }
           }
-        }
-      ]
-    })
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.3dwork.it"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rendering Immobili",
+            "item": "https://www.3dwork.it/render-immobili"
+          }
+        ]
+      }
+    ])
   }
 };
 

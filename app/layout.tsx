@@ -4,7 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Script from "next/script"; // 1. Importa il componente Script
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,21 +27,49 @@ export const metadata: Metadata = {
     canonical: "https://www.3dwork.it/",
   },
   other: {
-    "script:ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://www.3dwork.it",
-      "name": "3D Work",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.3dwork.it/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
+    "script:ld+json": JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.3dwork.it",
+        "name": "3DWORK",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.3dwork.it/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "3DWORK",
+        "url": "https://www.3dwork.it",
+        "logo": "https://www.3dwork.it/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/3dwork_stefanonatali",
+          "https://www.facebook.com/3DWORKstudio"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "ratingCount": "12"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "3DWORK",
+        "url": "https://www.3dwork.it",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cesena",
+          "addressRegion": "FC",
+          "addressCountry": "IT"
+        }
       }
-    })
+    ])
   }
 };
-
-
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -51,17 +79,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full flex flex-col">
         
-        {/* HEADER FISSO */}
         <Header />
 
-        {/* CONTENUTO DELLE PAGINE */}
-        <div className="pt-20"> 
+        <div className="pt-20">
           {children}
         </div>
 
         <Footer />
 
-        {/* 2. Inserito lo script di Umami qui sotto */}
         <Script 
           defer 
           src="https://cloud.umami.is/script.js" 

@@ -4,50 +4,70 @@ export const metadata: Metadata = {
   title: "Rendering 3D Esterni – 3DWORK",
   description: "Rendering 3D fotorealistici di esterni per ville, edifici, cantieri e progetti architettonici.",
   other: {
-    "script:ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Rendering 3D Esterni",
-      "provider": {
-        "@type": "Organization",
-        "name": "3DWORK",
-        "url": "https://www.3dwork.it"
-      },
-      "areaServed": "Italia",
-      "serviceType": "Rendering 3D fotorealistico di esterni",
-      "description": "Rendering 3D fotorealistici per ville, edifici e cantieri.",
-      "offers": {
-        "@type": "Offer",
-        "price": "X",
-        "priceCurrency": "EUR"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quanto costa un rendering 3D di esterni?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il prezzo dipende dalla complessità dell’edificio e dal numero di viste richieste."
-          }
+    "script:ld+json": JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Rendering 3D Esterni",
+        "provider": {
+          "@type": "Organization",
+          "name": "3DWORK",
+          "url": "https://www.3dwork.it"
         },
-        {
-          "@type": "Question",
-          "name": "In quanto tempo consegni un rendering di esterni?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I tempi medi vanno da Y a Z giorni lavorativi."
-          }
+        "areaServed": "Italia",
+        "serviceType": "Rendering 3D fotorealistico di esterni",
+        "description": "Rendering 3D fotorealistici per ville, edifici e cantieri.",
+        "offers": {
+          "@type": "Offer",
+          "price": "X",
+          "priceCurrency": "EUR"
         },
-        {
-          "@type": "Question",
-          "name": "Quali file servono per iniziare un rendering di esterni?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Posso lavorare da DWG, PDF, modelli 3D, foto del contesto o schizzi."
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto costa un rendering 3D di esterni?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il prezzo dipende dalla complessità dell’edificio e dal numero di viste richieste."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In quanto tempo consegni un rendering di esterni?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I tempi medi vanno da Y a Z giorni lavorativi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quali file servono per iniziare un rendering di esterni?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Posso lavorare da DWG, PDF, modelli 3D, foto del contesto o schizzi."
+            }
           }
-        }
-      ]
-    })
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.3dwork.it"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rendering Esterni",
+            "item": "https://www.3dwork.it/render-esterni"
+          }
+        ]
+      }
+    ])
   }
 };
 
@@ -68,7 +88,6 @@ export default function RenderEsterniPage() {
         <h2 className="text-2xl font-semibold">Quanto costa un rendering 3D di esterni?</h2>
         <p>
           Il prezzo dipende dalla complessità dell’edificio, dal contesto ambientale e dal numero di viste richieste.
-          In media, un rendering esterno parte da X € per una singola vista.
         </p>
       </section>
 
@@ -115,3 +134,4 @@ export default function RenderEsterniPage() {
     </main>
   );
 }
+
