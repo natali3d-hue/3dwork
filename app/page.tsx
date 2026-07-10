@@ -11,10 +11,10 @@ import Gallery8 from "@/components/Gallery8";
 
 // 🔥 SEO metadata
 export const metadata = {
-  title: "ArchViz per Costruzioni e Immobiliari | 3DWORK",
-  description: "Rendering 3D fotorealistici per immobili, architettura e agenzie.",
+  title: "3D Work | ArchViz per Costruzioni e Immobiliari | 3DWORK",
+  description: "3DWORK (o 3D Work) realizza rendering 3D fotorealistici per immobili, architettura e agenzie.",
   openGraph: {
-    title: "3DWORK – Rendering 3D Fotorealistici",
+    title: "3D Work | 3DWORK – Rendering 3D Fotorealistici",
     description: "Servizi di visualizzazione 3D per immobili e architettura.",
     url: "https://www.3dwork.it",
     siteName: "3DWORK",
@@ -35,6 +35,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "3DWORK",
+    "alternateName": "3D Work",
     "image": "https://www.3dwork.it/og-image.jpg",
     "url": "https://www.3dwork.it",
     "telephone": "+39 0000000000",
@@ -64,25 +65,25 @@ export default function Home() {
         "@type": "Service",
         "name": "Rendering 3D Fotorealistici",
         "description": "Render professionali per immobili, architettura, interni ed esterni.",
-        "provider": { "@type": "LocalBusiness", "name": "3DWORK" }
+        "provider": { "@type": "LocalBusiness", "name": "3DWORK", "alternateName": "3D Work" }
       },
       {
         "@type": "Service",
         "name": "Brochure Digitali",
         "description": "Brochure digitali premium per presentare immobili e progetti.",
-        "provider": { "@type": "LocalBusiness", "name": "3DWORK" }
+        "provider": { "@type": "LocalBusiness", "name": "3DWORK", "alternateName": "3D Work" }
       },
       {
         "@type": "Service",
         "name": "Visual Identity del Progetto",
         "description": "Materiali visivi coordinati per presentazioni immobiliari e architettoniche.",
-        "provider": { "@type": "LocalBusiness", "name": "3DWORK" }
+        "provider": { "@type": "LocalBusiness", "name": "3DWORK", "alternateName": "3D Work" }
       },
       {
         "@type": "Service",
         "name": "Siti Web & Landing Page Next.js",
         "description": "Siti web moderni, veloci e ottimizzati SEO per immobili e progetti.",
-        "provider": { "@type": "LocalBusiness", "name": "3DWORK" }
+        "provider": { "@type": "LocalBusiness", "name": "3DWORK", "alternateName": "3D Work" }
       }
     ]
   };
@@ -154,7 +155,7 @@ export default function Home() {
         <Services />
         <Sections />
 
-        {/* ⭐ Featured Render inserito qui */}
+        {/* ⭐ Featured Render */}
         <div className="w-full my-20">
           <img
             src="/Serale2.webp"
@@ -175,3 +176,4 @@ export default function Home() {
     </>
   );
 }
+

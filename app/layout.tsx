@@ -18,14 +18,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.3dwork.it"),
-  title: "3DWORK – Rendering 3D Fotorealistici",
-  description: "Rendering 3D fotorealistici per immobili, architettura e agenzie.",
+
+  // 🔥 TITLE + DESCRIPTION OTTIMIZZATI
+  title: "3D Work | 3DWORK – Rendering 3D Fotorealistici",
+  description:
+    "3DWORK (o 3D Work) è lo studio di rendering 3D fotorealistici per immobili, architettura e agenzie.",
+
   icons: {
     icon: "/favicon.png",
   },
+
   alternates: {
     canonical: "https://www.3dwork.it/",
   },
+
+  // 🔥 DATI STRUTTURATI CON alternateName
   other: {
     "script:ld+json": JSON.stringify([
       {
@@ -43,6 +50,7 @@ export const metadata: Metadata = {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "3DWORK",
+        "alternateName": "3D Work",
         "url": "https://www.3dwork.it",
         "logo": "https://www.3dwork.it/logo.png",
         "sameAs": [
@@ -59,6 +67,7 @@ export const metadata: Metadata = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "3DWORK",
+        "alternateName": "3D Work",
         "url": "https://www.3dwork.it",
         "address": {
           "@type": "PostalAddress",
@@ -96,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
