@@ -29,7 +29,7 @@ export default function Header() {
           <a href="/#services" className="hover:text-gray-300 transition">Servizi</a>
 
           <a 
-            href="https://www.stefanonatali.it" 
+            href="https://www.stefanonatali.it/chi-sono/" 
             className="hover:text-gray-300 transition"
             target="_blank"
             rel="noopener noreferrer"
