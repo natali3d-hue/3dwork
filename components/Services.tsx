@@ -2,7 +2,7 @@ export default function Services() {
   const items = [
     {
       title: "Render Professionali",
-      text: "Immagini fotorealistiche che rispettano progetto, materiali e luce reale.",
+      text: "Immagini fotorealistiche e brevi clip video che valorizzano progetto, materiali e luce reale.",
       icon: () => (
         <svg className="h-10 w-10 text-white mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75V21h15V9.75" />
