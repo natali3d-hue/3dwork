@@ -1,10 +1,17 @@
-name: 3D Work
-type: Studio di rendering 3D
-url: https://www.3dwork.it
-services:
-  - rendering fotorealistico
-  - animazioni 3D
-  - render immobili
-  - render cantieri
-location: Cesena, Italia
-Contact: info@3dwork.it
+# 3D Work – Render 3D e tour 360° per il Real Estate
+
+Sito principale: https://www.3dwork.it/
+
+Descrizione:
+3D Work realizza render fotorealistici, tour 360° e siti web Next.js ottimizzati per il settore immobiliare.
+
+Servizi principali:
+- Render 3D di interni ed esterni
+- Tour 360° e virtual tour per immobili
+- Siti web Next.js con performance elevate e SEO tecnica
+
+Contenuti chiave:
+- Portfolio di progetti 3D
+- Informazioni sui servizi per agenzie immobiliari e privati
+- Contatti per richieste di preventivo
+
