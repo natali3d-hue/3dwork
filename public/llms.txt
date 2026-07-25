@@ -1,17 +1,16 @@
-# 3D Work – Render 3D e tour 360° per il Real Estate
+# 3D Work – Render 3D e Tour 360°
 
-Sito principale: https://www.3dwork.it/
+[Visita il sito ufficiale](https://www.3dwork.it/)
 
-Descrizione:
 3D Work realizza render fotorealistici, tour 360° e siti web Next.js ottimizzati per il settore immobiliare.
 
-Servizi principali:
+## Servizi principali
 - Render 3D di interni ed esterni
-- Tour 360° e virtual tour per immobili
-- Siti web Next.js con performance elevate e SEO tecnica
+- Tour 360° e virtual tour
+- Siti web Next.js ad alte performance
 
-Contenuti chiave:
+## Contenuti chiave
 - Portfolio di progetti 3D
-- Informazioni sui servizi per agenzie immobiliari e privati
-- Contatti per richieste di preventivo
+- Informazioni per agenzie immobiliari e privati
+- Contatti per preventivi
 
