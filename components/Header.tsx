@@ -104,7 +104,7 @@ export default function Header() {
             <span className="font-semibold mb-2">Tour 360°</span>
 
             <a 
-              href="/PanoTest/index.html"
+              href="/tour360-interno"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
