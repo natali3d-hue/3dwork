@@ -39,35 +39,36 @@ export default function Header() {
 
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
 
-          {/* ▼ TOUR 360° CON SOTTOMENU */}
+          {/* ▼ TOUR 360° CON SOTTOMENU STABILE */}
           <div className="relative group">
             <span className="hover:text-gray-300 transition font-semibold cursor-pointer">
               Tour 360°
             </span>
 
             {/* SUBMENU */}
-            <div className="absolute left-0 mt-2 hidden group-hover:block bg-black border border-white/10 rounded-md shadow-lg">
-              <ul className="py-2 text-sm text-white">
-                <li>
-                  <a 
-                    href="/PanoTest/index.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-2 hover:bg-white/10"
-                  >
-                    Interno
-                  </a>
-                </li>
+            <div
+              className="
+                absolute left-0 top-full mt-1 
+                hidden group-hover:flex flex-col
+                bg-black border border-white/10 rounded-md shadow-lg
+                pointer-events-auto p-1
+              "
+            >
+              <a 
+                href="/PanoTest/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
+              >
+                Interno
+              </a>
 
-                <li>
-                  <a 
-                    href="/tour360-esterno"
-                    className="block px-4 py-2 hover:bg-white/10"
-                  >
-                    Esterno
-                  </a>
-                </li>
-              </ul>
+              <a 
+                href="/tour360-esterno"
+                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
+              >
+                Esterno
+              </a>
             </div>
           </div>
         </nav>
