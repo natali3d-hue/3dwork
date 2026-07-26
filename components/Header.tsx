@@ -26,6 +26,7 @@ export default function Header() {
 
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-8 text-white text-sm">
+
           <a href="/#services" className="hover:text-gray-300 transition">Servizi</a>
 
           <a 
@@ -39,19 +40,19 @@ export default function Header() {
 
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
 
-          {/* ▼ TOUR 360° CON SOTTOMENU STABILE */}
+          {/* ▼ TOUR 360° CON DROPDOWN STABILE */}
           <div className="relative group">
-            <span className="hover:text-gray-300 transition font-semibold cursor-pointer">
+            <span className="hover:text-gray-300 transition font-semibold cursor-pointer pb-4 block">
               Tour 360°
             </span>
 
-            {/* SUBMENU */}
+            {/* SUBMENU STABILE */}
             <div
               className="
-                absolute left-0 top-full mt-1 
+                absolute left-0 top-full 
                 hidden group-hover:flex flex-col
                 bg-black border border-white/10 rounded-md shadow-lg
-                pointer-events-auto p-1
+                pointer-events-auto p-1 z-50
               "
             >
               <a 
@@ -98,7 +99,7 @@ export default function Header() {
 
           <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
 
-          {/* ▼ TOUR 360° MOBILE CON SOTTOMENU */}
+          {/* ▼ TOUR 360° MOBILE */}
           <div className="flex flex-col">
             <span className="font-semibold mb-2">Tour 360°</span>
 
