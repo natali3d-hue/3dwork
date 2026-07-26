@@ -56,7 +56,7 @@ export default function Header() {
               "
             >
               <a 
-                href="/PanoTest/index.html"
+                href="/tour360-interno"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 hover:bg-white/10 text-sm text-white"
