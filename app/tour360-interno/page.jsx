@@ -3,7 +3,7 @@ export default function TourInternoPage() {
     <main
       style={{
         position: "fixed",
-        top: "80px", // altezza del tuo Header (pt-20)
+        top: "80px", // altezza del tuo Header
         left: 0,
         width: "100%",
         height: "calc(100vh - 80px)",
