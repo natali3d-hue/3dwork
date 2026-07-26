@@ -1,12 +1,14 @@
 export default function TourInternoPage() {
   return (
-    <div className="w-full h-screen">
+    <main style={{ width: "100%", height: "100vh" }}>
       <iframe
         src="/PanoTest/index.html"
-        className="w-full h-[calc(100vh-96px)] mt-24 border-0"
+        style={{ border: "none", width: "100%", height: "100%" }}
+        title="Tour 360° Interno"
       />
-    </div>
+    </main>
   );
 }
+
 
 
