@@ -62,9 +62,65 @@ export default function Header() {
                 <li>
                   <a 
                     href="/tour360-esterno"
-                    className="block
+                    className="block px-4 py-2 hover:bg-white/10"
+                  >
+                    Esterno
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
+        {/* HAMBURGER MOBILE */}
+        <button
+          className="md:hidden text-white text-3xl"
+          onClick={() => setOpen(!open)}
+        >
+          ☰
+        </button>
+      </div>
 
+      {/* MENU MOBILE */}
+      {open && (
+        <nav className="md:hidden flex flex-col bg-black text-white px-6 pb-4 space-y-4 text-lg border-t border-white/10">
+          <a href="/#services" onClick={() => setOpen(false)}>Servizi</a>
 
+          <a 
+            href="https://www.stefanonatali.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            Chi sono
+          </a>
 
+          <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
 
+          {/* ▼ TOUR 360° MOBILE CON SOTTOMENU */}
+          <div className="flex flex-col">
+            <span className="font-semibold mb-2">Tour 360°</span>
+
+            <a 
+              href="/PanoTest/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="pl-4 py-1 text-white/80"
+            >
+              Interno
+            </a>
+
+            <a 
+              href="/tour360-esterno"
+              onClick={() => setOpen(false)}
+              className="pl-4 py-1 text-white/80"
+            >
+              Esterno
+            </a>
+          </div>
+        </nav>
+      )}
+    </header>
+  );
+}
