@@ -39,56 +39,30 @@ export default function Header() {
 
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
 
-          {/* 👉 LINK AL TOUR 360° */}
-          <a 
-            href="https://www.3dwork.it/PanoTest/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-300 transition font-semibold"
-          >
-            Tour 360°
-          </a>
-        </nav>
+          {/* ▼ TOUR 360° CON SOTTOMENU */}
+          <div className="relative group">
+            <span className="hover:text-gray-300 transition font-semibold cursor-pointer">
+              Tour 360°
+            </span>
 
-        {/* HAMBURGER MOBILE */}
-        <button
-          className="md:hidden text-white text-3xl"
-          onClick={() => setOpen(!open)}
-        >
-          ☰
-        </button>
-      </div>
+            {/* SUBMENU */}
+            <div className="absolute left-0 mt-2 hidden group-hover:block bg-black border border-white/10 rounded-md shadow-lg">
+              <ul className="py-2 text-sm text-white">
+                <li>
+                  <a 
+                    href="/PanoTest/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 hover:bg-white/10"
+                  >
+                    Interno
+                  </a>
+                </li>
 
-      {/* MENU MOBILE */}
-      {open && (
-        <nav className="md:hidden flex flex-col bg-black text-white px-6 pb-4 space-y-4 text-lg border-t border-white/10">
-          <a href="/#services" onClick={() => setOpen(false)}>Servizi</a>
-
-          <a 
-            href="https://www.stefanonatali.it"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-          >
-            Chi sono
-          </a>
-
-          <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
-
-          {/* 👉 LINK AL TOUR 360° */}
-          <a 
-            href="https://www.3dwork.it/PanoTest/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-          >
-            Tour 360°
-          </a>
-        </nav>
-      )}
-    </header>
-  );
-}
+                <li>
+                  <a 
+                    href="/tour360-esterno"
+                    className="block
 
 
 
