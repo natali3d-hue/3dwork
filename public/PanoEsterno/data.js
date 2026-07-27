@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-fronte-1",
-      "name": "Fronte 1",
+      "id": "0-fronte-destra",
+      "name": "Fronte Destra",
       "levels": [
         {
           "tileSize": 256,
@@ -26,46 +26,39 @@ var APP_DATA = {
       "initialViewParameters": {
         "yaw": 0,
         "pitch": 0,
-        "fov": 1.3536620968836544
+        "fov": 1.3572162071804879
       },
       "linkHotspots": [
         {
-          "yaw": 0.6185860973176833,
-          "pitch": 0.2985373158563309,
+          "yaw": 0.6165616894618964,
+          "pitch": 0.3017390155719113,
           "rotation": 0,
-          "target": "0-fronte-1"
+          "target": "0-fronte-destra"
         },
         {
-          "yaw": -0.25183970086934515,
-          "pitch": 0.10210427324334503,
+          "yaw": -0.20673027218122897,
+          "pitch": 0.12846144592134578,
           "rotation": 0,
-          "target": "1-fronte-2"
+          "target": "1-fronte-sinistra"
         },
         {
-          "yaw": 0.9409890178654319,
-          "pitch": 0.056796714283049,
+          "yaw": 0.8799511127653084,
+          "pitch": 0.15091169078243283,
           "rotation": 0,
-          "target": "2-retro-1"
+          "target": "4-centrale-fronte"
         },
         {
-          "yaw": 0.8862430948899345,
-          "pitch": 0.14305584996814424,
+          "yaw": 0.9360010115786395,
+          "pitch": 0.0567635030630278,
           "rotation": 0,
-          "target": "5-centrale-fronte"
+          "target": "2-retro-destra"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 0.6970720361143865,
-          "pitch": -0.46770542840941864,
-          "title": "Case Frini, Cesena (FC)<div><br></div>",
-          "text": "Tour 360°"
-        }
-      ]
+      "infoHotspots": []
     },
     {
-      "id": "1-fronte-2",
-      "name": "Fronte 2",
+      "id": "1-fronte-sinistra",
+      "name": "Fronte Sinistra",
       "levels": [
         {
           "tileSize": 256,
@@ -93,35 +86,35 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.004104359311311256,
-          "pitch": 0.27026499847710994,
+          "yaw": 0.054186508521993915,
+          "pitch": 0.2594045426167426,
           "rotation": 0,
-          "target": "1-fronte-2"
+          "target": "1-fronte-sinistra"
         },
         {
-          "yaw": 0.695864472562441,
-          "pitch": 0.08641240018884133,
+          "yaw": 0.6958920336484731,
+          "pitch": 0.08581974825913186,
           "rotation": 0,
-          "target": "0-fronte-1"
+          "target": "0-fronte-destra"
         },
         {
-          "yaw": -0.5563056746857011,
-          "pitch": 0.0574473013548662,
+          "yaw": -0.27490507764019334,
+          "pitch": 0.14854615060374599,
           "rotation": 0,
-          "target": "3-retro-2"
+          "target": "5-centrale-retro"
         },
         {
-          "yaw": -0.35023148852289765,
-          "pitch": 0.14923572720352496,
+          "yaw": -0.5163370276914119,
+          "pitch": 0.0690705697727072,
           "rotation": 0,
-          "target": "4-centrale-retro"
+          "target": "3-retro-sinistra"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2-retro-1",
-      "name": "Retro 1",
+      "id": "2-retro-destra",
+      "name": "Retro Destra",
       "levels": [
         {
           "tileSize": 256,
@@ -149,35 +142,35 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.23254465860679296,
-          "pitch": 0.06914759646119606,
+          "yaw": -0.5392745861257922,
+          "pitch": 0.2433064605193902,
           "rotation": 0,
-          "target": "3-retro-2"
+          "target": "2-retro-destra"
         },
         {
-          "yaw": -0.48094369863807884,
-          "pitch": 0.2649109256048199,
+          "yaw": 0.22054380415987218,
+          "pitch": 0.09323129342607217,
           "rotation": 0,
-          "target": "2-retro-1"
+          "target": "3-retro-sinistra"
         },
         {
-          "yaw": -1.0237333807540505,
-          "pitch": 0.034462862588000576,
+          "yaw": -1.0142410763489664,
+          "pitch": 0.048671389886809635,
           "rotation": 0,
-          "target": "0-fronte-1"
+          "target": "0-fronte-destra"
         },
         {
-          "yaw": -0.894366803327932,
-          "pitch": 0.11764646813062463,
+          "yaw": -0.8950829917575494,
+          "pitch": 0.13042962290863436,
           "rotation": 0,
-          "target": "5-centrale-fronte"
+          "target": "4-centrale-fronte"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-retro-2",
-      "name": "Retro 2",
+      "id": "3-retro-sinistra",
+      "name": "Retro Sinistra",
       "levels": [
         {
           "tileSize": 256,
@@ -191,69 +184,9 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 2048,
-      "initialViewParameters": {
-        "yaw": 0.05707720173317732,
-        "pitch": 0.10888752652512146,
-        "fov": 1.3536620968836544
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.896772230268386,
-          "pitch": 0.06012712062380565,
-          "rotation": 0,
-          "target": "1-fronte-2"
-        },
-        {
-          "yaw": 0.4675117411052998,
-          "pitch": 0.3799637545392329,
-          "rotation": 0,
-          "target": "3-retro-2"
-        },
-        {
-          "yaw": -0.4410018826415687,
-          "pitch": 0.07778832551602832,
-          "rotation": 0,
-          "target": "2-retro-1"
-        },
-        {
-          "yaw": 0.8041660053558424,
-          "pitch": 0.16509718815117225,
-          "rotation": 0,
-          "target": "4-centrale-retro"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-centrale-retro",
-      "name": "Centrale Retro",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 2048,
+      "faceSize": 1024,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -261,28 +194,34 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.814013100615691,
-          "pitch": 0.13168020890955745,
+          "yaw": 0.457043974250654,
+          "pitch": 0.35287378717448625,
           "rotation": 0,
-          "target": "1-fronte-2"
+          "target": "3-retro-sinistra"
         },
         {
-          "yaw": -0.8493822355912162,
-          "pitch": 0.11737470407827466,
+          "yaw": -0.4453302617422974,
+          "pitch": 0.10243421650001139,
           "rotation": 0,
-          "target": "3-retro-2"
+          "target": "2-retro-destra"
         },
         {
-          "yaw": 0.006156479456960184,
-          "pitch": 0.23564132707389618,
+          "yaw": 0.8915311894087985,
+          "pitch": 0.06804377159939179,
           "rotation": 0,
-          "target": "4-centrale-retro"
+          "target": "1-fronte-sinistra"
+        },
+        {
+          "yaw": 0.7761830233317397,
+          "pitch": 0.16366426516339416,
+          "rotation": 0,
+          "target": "5-centrale-retro"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-centrale-fronte",
+      "id": "4-centrale-fronte",
       "name": "Centrale Fronte",
       "levels": [
         {
@@ -311,22 +250,68 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.8148595980903153,
-          "pitch": 0.10635372469739401,
+          "yaw": 0.05058044663477368,
+          "pitch": 0.23056354319148475,
           "rotation": 0,
-          "target": "0-fronte-1"
+          "target": "4-centrale-fronte"
         },
         {
-          "yaw": 0.8419925744206722,
-          "pitch": 0.10867032419115574,
+          "yaw": -0.7898069973712403,
+          "pitch": 0.14035093460228865,
           "rotation": 0,
-          "target": "2-retro-1"
+          "target": "0-fronte-destra"
         },
         {
-          "yaw": 0.006143136437419372,
-          "pitch": 0.19607525113212,
+          "yaw": 0.8227133414697647,
+          "pitch": 0.13929559289551818,
           "rotation": 0,
-          "target": "5-centrale-fronte"
+          "target": "2-retro-destra"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-centrale-retro",
+      "name": "Centrale Retro",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.012655228874669078,
+          "pitch": 0.2239665238563724,
+          "rotation": 0,
+          "target": "5-centrale-retro"
+        },
+        {
+          "yaw": 0.7960397834651012,
+          "pitch": 0.1345124713451824,
+          "rotation": 0,
+          "target": "1-fronte-sinistra"
+        },
+        {
+          "yaw": -0.7924878188278051,
+          "pitch": 0.15239968646055146,
+          "rotation": 0,
+          "target": "3-retro-sinistra"
         }
       ],
       "infoHotspots": []
@@ -337,6 +322,6 @@ var APP_DATA = {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
     "fullscreenButton": true,
-    "viewControlButtons": true
+    "viewControlButtons": false
   }
 };
