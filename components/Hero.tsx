@@ -21,7 +21,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-2xl md:text-3xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          Workflow 3D professionale potenziato dall’AI per una qualità superiore in tempi ottimizzati.
+          Workflow 3D professionale potenziato dall’AI per una qualità superiore e tempi ottimizzati.
         </p>
 
         <a
