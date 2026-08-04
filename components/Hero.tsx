@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-10">
-          Render fotorealistici, visualizzazione architettonica e comunicazione visiva.
+         Workflow 3D professionale potenziato dall’AI per qualità superiore e tempi ottimizzati.
         </p>
 
       <a
