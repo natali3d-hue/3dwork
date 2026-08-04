@@ -14,21 +14,27 @@ export default function Hero() {
         priority
       />
 
-      {/* CONTENUTO */}
+      {/* CONTENUTO CON OVERLAY */}
       <div className="relative z-10 max-w-3xl">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          ARCHITECTURAL RENDERING STUDIO
-        </h1>
 
-        <p className="text-2xl md:text-3xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          Workflow 3D professionale potenziato dall’AI per qualità superiore e tempi ottimizzati.
-        </p>
+        {/* OVERLAY LEGGERO */}
+        <div className="bg-black/30 backdrop-blur-sm px-6 py-6 rounded-xl inline-block">
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+            ARCHITECTURAL RENDERING STUDIO
+          </h1>
+
+          <p className="text-xl md:text-2xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+            Workflow 3D professionale potenziato dall’AI per qualità superiore e tempi ottimizzati.
+          </p>
+
+        </div>
 
         <a
           href="https://wa.me/393342481592?text=Ciao%20Stefano,%20vorrei%20un%20preventivo%20per%20un%20render"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-[#2b2b2b] hover:bg-[#3a3a3a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition"
+          className="inline-flex items-center gap-3 bg-[#2b2b2b] hover:bg-[#3a3a3a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition mt-6"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +47,9 @@ export default function Hero() {
 
           Richiedi preventivo
         </a>
+
       </div>
     </section>
   );
 }
+
