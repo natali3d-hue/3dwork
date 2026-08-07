@@ -9,7 +9,7 @@ export default function Header() {
     <header className="w-full fixed top-0 left-0 z-50 bg-black border-b border-white/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
-        {/* LOGO TONDO VERDE */}
+        {/* LOGO TONDO VERDE + ENHANCED AI */}
         <a href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
@@ -19,9 +19,15 @@ export default function Header() {
             className="rounded-full"
             priority
           />
-          <span className="text-white text-xl font-semibold tracking-wide">
-            3D WORK™
-          </span>
+
+          <div className="flex flex-col leading-tight">
+            <span className="text-white text-xl font-semibold tracking-wide">
+              3D WORK™
+            </span>
+            <span className="text-white/60 text-xs tracking-wide">
+              Enhanced AI Studio
+            </span>
+          </div>
         </a>
 
         {/* MENU DESKTOP */}
