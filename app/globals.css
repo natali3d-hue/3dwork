@@ -74,4 +74,27 @@ html {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
+/* --- HERO: Slide + Blur dinamico --- */
+.hero-tech {
+  opacity: 0;
+  transform: translateX(60px) scale(1.05);
+  filter: blur(12px);
+  animation: heroTech 1.8s ease-out forwards;
+}
+
+@keyframes heroTech {
+  0% {
+    opacity: 0;
+    transform: translateX(60px) scale(1.05);
+    filter: blur(12px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(4px);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
 
