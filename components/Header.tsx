@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-start pt-65 items-center text-center px-6 bg-black text-white">
+    <section className="relative min-h-screen flex flex-col justify-start pt-65 items-center text-center px-6 bg-black text-white overflow-hidden">
 
       {/* IMMAGINE DI SFONDO ANIMATA */}
       <Image
         src="/Cucina.webp"
         alt="3D Rendering"
         fill
-        className="object-cover opacity-80 hero-slide-in"
+        className="object-cover opacity-80 hero-slide-in z-0"
         loading="eager"
         priority
       />
@@ -45,4 +45,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
