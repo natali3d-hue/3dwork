@@ -1,11 +1,14 @@
 export default function Footer() {
   return (
     <footer className="py-12 px-6 bg-black text-gray-400 text-center text-sm">
+
+      {/* INFO STUDIO */}
       <p>Studio · Cesena (FC) · Italy</p>
       <p>Email: info@3dwork.it</p>
 
       {/* SOCIAL ICONS */}
       <div className="mt-6 flex justify-center gap-6">
+
         {/* Facebook */}
         <a
           href="https://www.facebook.com/3DWORKstudio/"
@@ -77,12 +80,15 @@ export default function Footer() {
 
       {/* TECHNOLOGY NOTE */}
       <p className="mt-6 text-gray-500 text-xs">
-        Sito sviluppato con tecnologia Web Framework      </p>
+        Sito sviluppato con tecnologia Web Framework
+      </p>
 
+      {/* BRANDING AGGIORNATO */}
       <p className="mt-2">
-  © {new Date().getFullYear()} 3D WORK™ · P.I. 03371840400
-</p>
+        © {new Date().getFullYear()} 3D WORK™ Enhanced AI · P.I. 03371840400
+      </p>
 
     </footer>
   );
 }
+

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-start pt-65 items-center text-center px-6 bg-black text-white overflow-hidden">
 
-      {/* IMMAGINE DI SFONDO CON EFFETTO SLIDE + BLUR */}
+      {/* IMMAGINE DI SFONDO */}
       <Image
         src="/Cucina.webp"
         alt="3D Rendering"
@@ -16,14 +16,18 @@ export default function Hero() {
 
       {/* CONTENUTO */}
       <div className="relative z-10 max-w-3xl">
+
+        {/* ⭐ NUOVO TITOLO */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          ARCHITECTURAL RENDERING STUDIO
+          3D WORK™ Enhanced AI
         </h1>
 
+        {/* ⭐ NUOVO SOTTOTITOLO */}
         <p className="text-2xl md:text-3xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          Workflow 3D professionale potenziato dall’AI per una qualità superiore e tempi ottimizzati.
+          Architectural Rendering Studio con workflow 3D professionale potenziato dall’intelligenza artificiale.
         </p>
 
+        {/* CTA WHATSAPP */}
         <a
           href="https://wa.me/393342481592?text=Ciao%20Stefano,%20vorrei%20un%20preventivo%20per%20un%20render"
           target="_blank"
@@ -45,7 +49,6 @@ export default function Hero() {
     </section>
   );
 }
-
 
 
 

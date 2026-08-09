@@ -19,10 +19,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.3dwork.it"),
 
-  // 🔥 TITLE + DESCRIPTION OTTIMIZZATI
-  title: "3D Work | 3DWORK – Rendering 3D Fotorealistici",
+  // ⭐ TITLE + DESCRIPTION AGGIORNATI
+  title: "3D WORK™ Enhanced AI – Rendering 3D Fotorealistici",
   description:
-    "3DWORK (o 3D Work) è lo studio di rendering 3D fotorealistici per immobili, architettura e agenzie.",
+    "3D WORK™ Enhanced AI è lo studio di rendering 3D fotorealistici potenziato dall’intelligenza artificiale. Architettura, immobili, interni ed esterni con workflow AI avanzato.",
 
   icons: {
     icon: "/favicon.png",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     canonical: "https://www.3dwork.it/",
   },
 
-  // 🔥 DATI STRUTTURATI CON alternateName
+  // ⭐ DATI STRUTTURATI AGGIORNATI
   other: {
     "script:ld+json": JSON.stringify([
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "url": "https://www.3dwork.it",
-        "name": "3DWORK",
+        "name": "3D WORK™ Enhanced AI",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://www.3dwork.it/?s={search_term_string}",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "3DWORK",
-        "alternateName": "3D Work",
+        "name": "3D WORK™ Enhanced AI",
+        "alternateName": "3D WORK",
         "url": "https://www.3dwork.it",
         "logo": "https://www.3dwork.it/logo.png",
         "sameAs": [
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "3DWORK",
-        "alternateName": "3D Work",
+        "name": "3D WORK™ Enhanced AI",
+        "alternateName": "3D WORK",
         "url": "https://www.3dwork.it",
         "address": {
           "@type": "PostalAddress",
@@ -105,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 

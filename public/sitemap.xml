@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://www.3dwork.it</loc>
-<lastmod>2026-04-25T05:26:18.118Z</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1</priority>
-</url>
+
+  <site>https://www.3dwork.it/</site>
+  <name>3D WORK™ Enhanced AI</name>
+
+  <url>
+    <loc>https://www.3dwork.it/</loc>
+    <priority>1.00</priority>
+  </url>
+
 </urlset>
+

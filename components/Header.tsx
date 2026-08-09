@@ -9,7 +9,7 @@ export default function Header() {
     <header className="w-full fixed top-0 left-0 z-50 bg-black border-b border-white/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
-        {/* LOGO TONDO VERDE */}
+        {/* LOGO TONDO VERDE + TESTO A DUE RIGHE */}
         <a href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
@@ -19,9 +19,15 @@ export default function Header() {
             className="rounded-full"
             priority
           />
-          <span className="text-white text-xl font-semibold tracking-wide">
-            3D WORK™
-          </span>
+
+          <div className="flex flex-col leading-tight">
+            <span className="text-white text-xl font-semibold tracking-wide">
+              3D WORK™
+            </span>
+            <span className="text-white/70 text-xs font-medium tracking-wider uppercase">
+              Enhanced AI
+            </span>
+          </div>
         </a>
 
         {/* MENU DESKTOP */}
@@ -40,13 +46,11 @@ export default function Header() {
 
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
 
-          {/* ▼ TOUR 360° CON DROPDOWN STABILE */}
           <div className="relative group">
             <span className="hover:text-gray-300 transition font-semibold cursor-pointer pb-4 block">
               Tour 360°
             </span>
 
-            {/* SUBMENU STABILE */}
             <div
               className="
                 absolute left-0 top-full 
@@ -74,7 +78,6 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* HAMBURGER MOBILE */}
         <button
           className="md:hidden text-white text-3xl"
           onClick={() => setOpen(!open)}
@@ -83,7 +86,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* MENU MOBILE */}
       {open && (
         <nav className="md:hidden flex flex-col bg-black text-white px-6 pb-4 space-y-4 text-lg border-t border-white/10">
           <a href="/#services" onClick={() => setOpen(false)}>Servizi</a>
@@ -99,7 +101,6 @@ export default function Header() {
 
           <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
 
-          {/* ▼ TOUR 360° MOBILE */}
           <div className="flex flex-col">
             <span className="font-semibold mb-2">Tour 360°</span>
 
@@ -126,3 +127,4 @@ export default function Header() {
     </header>
   );
 }
+
