@@ -74,27 +74,31 @@ html {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
-/* --- HERO: Slide + Blur dinamico --- */
+/* --- HERO: Slide + Blur dinamico migliorato --- */
 .hero-tech {
   opacity: 0;
-  transform: translateX(60px) scale(1.05);
-  filter: blur(12px);
-  animation: heroTech 1.8s ease-out forwards;
+  transform: translateX(80px) scale(1.03);
+  filter: blur(8px);
+  animation: heroTech 2.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes heroTech {
   0% {
     opacity: 0;
-    transform: translateX(60px) scale(1.05);
-    filter: blur(12px);
+    transform: translateX(80px) scale(1.03);
+    filter: blur(8px);
   }
-  60% {
-    opacity: 1;
+  40% {
+    opacity: 0.6;
     filter: blur(4px);
   }
+  70% {
+    opacity: 0.9;
+    filter: blur(2px);
+  }
   100% {
+    opacity: 1;
     transform: translateX(0) scale(1);
     filter: blur(0);
   }
 }
-
