@@ -1,134 +1,48 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 
-export default function Header() {
-  const [open, setOpen] = useState(false);
-
+export default function Hero() {
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-black border-b border-white/10">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <section className="relative min-h-screen flex flex-col justify-start pt-65 items-center text-center px-6 bg-black text-white">
 
-        {/* LOGO TONDO VERDE + ENHANCED AI */}
-        <a href="/" className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="3DWORK Logo"
-            width={58}
-            height={58}
-            className="rounded-full"
-            priority
-          />
+      {/* IMMAGINE DI SFONDO ANIMATA */}
+      <Image
+        src="/Cucina.webp"
+        alt="3D Rendering"
+        fill
+        className="object-cover opacity-80 hero-slide-in"
+        loading="eager"
+        priority
+      />
 
-          <div className="flex flex-col leading-tight">
-            <span className="text-white text-xl font-semibold tracking-wide">
-              3D WORK™
-            </span>
-            <span className="text-white/60 text-xs tracking-wide">
-              Enhanced AI Studio
-            </span>
-          </div>
-        </a>
+      {/* CONTENUTO */}
+      <div className="relative z-10 max-w-3xl">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+          ARCHITECTURAL RENDERING STUDIO
+        </h1>
 
-        {/* MENU DESKTOP */}
-        <nav className="hidden md:flex items-center gap-8 text-white text-sm">
+        <p className="text-2xl md:text-3xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+          Workflow 3D professionale potenziato dall’AI per una qualità superiore e tempi ottimizzati.
+        </p>
 
-          <a href="/#services" className="hover:text-gray-300 transition">Servizi</a>
-
-          <a 
-            href="https://www.stefanonatali.it/chi-sono/" 
-            className="hover:text-gray-300 transition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Chi sono
-          </a>
-
-          <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
-
-          {/* ▼ TOUR 360° CON DROPDOWN STABILE */}
-          <div className="relative group">
-            <span className="hover:text-gray-300 transition font-semibold cursor-pointer pb-4 block">
-              Tour 360°
-            </span>
-
-            {/* SUBMENU STABILE */}
-            <div
-              className="
-                absolute left-0 top-full 
-                hidden group-hover:flex flex-col
-                bg-black border border-white/10 rounded-md shadow-lg
-                pointer-events-auto p-1 z-50
-              "
-            >
-              <a 
-                href="/tour360-interno"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
-              >
-                Interno
-              </a>
-
-              <a 
-                href="/tour360-esterno"
-                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
-              >
-                Esterno
-              </a>
-            </div>
-          </div>
-        </nav>
-
-        {/* HAMBURGER MOBILE */}
-        <button
-          className="md:hidden text-white text-3xl"
-          onClick={() => setOpen(!open)}
+        <a
+          href="https://wa.me/393342481592?text=Ciao%20Stefano,%20vorrei%20un%20preventivo%20per%20un%20render"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 bg-[#2b2b2b] hover:bg-[#3a3a3a] text-white px-8 py-4 rounded-lg text-lg font-semibold transition"
         >
-          ☰
-        </button>
-      </div>
-
-      {/* MENU MOBILE */}
-      {open && (
-        <nav className="md:hidden flex flex-col bg-black text-white px-6 pb-4 space-y-4 text-lg border-t border-white/10">
-          <a href="/#services" onClick={() => setOpen(false)}>Servizi</a>
-
-          <a 
-            href="https://www.stefanonatali.it"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            fill="#25D366"
+            className="w-6 h-6"
           >
-            Chi sono
-          </a>
+            <path d="M16.001 3.2c-7.064 0-12.8 5.736-12.8 12.8 0 2.256.592 4.448 1.712 6.4L3.2 28.8l6.592-1.68c1.856.992 3.936 1.52 6.208 1.52 7.064 0 12.8-5.736 12.8-12.8s-5.736-12.8-12.8-12.8zm0 23.2c-1.92 0-3.744-.512-5.36-1.488l-.384-.224-3.92 1.008 1.04-3.84-.24-.4A10.55 10.55 0 0 1 5.6 16c0-5.744 4.656-10.4 10.4-10.4s10.4 4.656 10.4 10.4-4.656 10.4-10.4 10.4zm5.488-7.696c-.304-.16-1.792-.88-2.064-.976-.272-.096-.464-.144-.656.144-.192.288-.752.976-.928 1.168-.176.192-.336.208-.624.08-.288-.128-1.216-.448-2.32-1.424-.864-.768-1.456-1.712-1.632-2-.176-.288-.016-.448.128-.576.128-.128.288-.336.432-.512.144-.176.192-.304.288-.496.096-.192.048-.352-.016-.496-.064-.144-.656-1.584-.896-2.176-.24-.592-.48-.512-.656-.512-.176 0-.384 0-.592 0-.208 0-.544.08-.832.384-.288.304-1.088 1.056-1.088 2.56 0 1.504 1.12 2.96 1.28 3.168.16.208 2.24 3.52 5.44 4.8.768.32 1.36.512 1.824.656.768.24 1.44.208 1.984.128.608-.096 1.84-.752 2.096-1.488.256-.736.256-1.328.176-1.456-.08-.128-.272-.208-.576-.368z"/>
+          </svg>
 
-          <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
-
-          {/* ▼ TOUR 360° MOBILE */}
-          <div className="flex flex-col">
-            <span className="font-semibold mb-2">Tour 360°</span>
-
-            <a 
-              href="/tour360-interno"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-              className="pl-4 py-1 text-white/80"
-            >
-              Interno
-            </a>
-
-            <a 
-              href="/tour360-esterno"
-              onClick={() => setOpen(false)}
-              className="pl-4 py-1 text-white/80"
-            >
-              Esterno
-            </a>
-          </div>
-        </nav>
-      )}
-    </header>
+          Richiedi preventivo
+        </a>
+      </div>
+    </section>
   );
 }
+
