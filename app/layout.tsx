@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.3dwork.it"),
 
   // ⭐ TITLE + DESCRIPTION AGGIORNATI
-  title: "3D WORK™ Enhanced AI – Rendering 3D Fotorealistici",
+  title: "3D WORK™ Enhanced AI – Rendering 3D Fotorealistici e ArchViz a Cesena",
   description:
     "3D WORK™ Enhanced AI è lo studio di rendering 3D fotorealistici potenziato dall’intelligenza artificiale. Architettura, immobili, interni ed esterni con workflow AI avanzato.",
 

@@ -17,14 +17,19 @@ export default function Hero() {
       {/* CONTENUTO */}
       <div className="relative z-10 max-w-3xl">
 
-        {/* ⭐ NUOVO TITOLO */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+        {/* ⭐ H1 BRAND */}
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
           3D WORK™ Enhanced AI
         </h1>
 
-        {/* ⭐ NUOVO SOTTOTITOLO */}
-        <p className="text-2xl md:text-3xl font-semibold text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          Architectural Rendering Studio con workflow 3D professionale potenziato dall’intelligenza artificiale.
+        {/* ⭐ H2 SEO */}
+        <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+          Rendering 3D fotorealistici e ArchViz professionale a Cesena
+        </h2>
+
+        {/* ⭐ DESCRIZIONE BREVE */}
+        <p className="text-xl md:text-2xl text-white mb-10 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
+          Studio di visualizzazione architettonica con workflow 3D potenziato dall’intelligenza artificiale.
         </p>
 
         {/* CTA WHATSAPP */}
@@ -49,6 +54,7 @@ export default function Hero() {
     </section>
   );
 }
+
 
 
 
