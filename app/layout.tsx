@@ -19,8 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.3dwork.it"),
 
-  // ⭐ TITLE + DESCRIPTION AGGIORNATI
-  title: "3D WORK™ Enhanced AI – Rendering 3D Fotorealistici e ArchViz a Cesena",
+  title: "3D WORK™ Enhanced AI – Rendering 3D Fotorealistici e ArchViz",
   description:
     "3D WORK™ Enhanced AI è lo studio di rendering 3D fotorealistici potenziato dall’intelligenza artificiale. Architettura, immobili, interni ed esterni con workflow AI avanzato.",
 
@@ -32,51 +31,80 @@ export const metadata: Metadata = {
     canonical: "https://www.3dwork.it/",
   },
 
-  // ⭐ DATI STRUTTURATI AGGIORNATI
   other: {
-    "script:ld+json": JSON.stringify([
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": "https://www.3dwork.it",
-        "name": "3D WORK™ Enhanced AI",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.3dwork.it/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
+    "script:ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.3dwork.it/#organization",
+          "name": "3D WORK™ Enhanced AI",
+          "url": "https://www.3dwork.it",
+          "logo": "https://www.3dwork.it/logo.png",
+          "description":
+            "Studio di rendering 3D fotorealistici, ArchViz e comunicazione visiva con workflow potenziato dall’intelligenza artificiale.",
+          "founder": "Stefano",
+          "sameAs": [
+            "https://www.instagram.com/3dwork.it",
+            "https://www.linkedin.com/company/3dwork",
+            "https://www.facebook.com/3dwork.it"
+          ]
+        },
+
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.3dwork.it/#localbusiness",
+          "name": "3D WORK™ Enhanced AI",
+          "image": "https://www.3dwork.it/Cucina.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Cesare Battisti 149",
+            "addressLocality": "Cesena",
+            "addressRegion": "FC",
+            "postalCode": "47521",
+            "addressCountry": "IT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 44.139,
+            "longitude": 12.243
+          },
+          "areaServed": [
+            "Cesena",
+            "Forlì-Cesena",
+            "Emilia-Romagna",
+            "Italia"
+          ],
+          "priceRange": "€€",
+          "telephone": "+39 334 248 1592"
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://www.3dwork.it/#website",
+          "url": "https://www.3dwork.it",
+          "name": "3D WORK™ Enhanced AI",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.3dwork.it/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.3dwork.it/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.3dwork.it/"
+            }
+          ]
         }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "3D WORK™ Enhanced AI",
-        "alternateName": "3D WORK",
-        "url": "https://www.3dwork.it",
-        "logo": "https://www.3dwork.it/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/3dwork_stefanonatali",
-          "https://www.facebook.com/3DWORKstudio"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "ratingCount": "12"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "3D WORK™ Enhanced AI",
-        "alternateName": "3D WORK",
-        "url": "https://www.3dwork.it",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Cesena",
-          "addressRegion": "FC",
-          "addressCountry": "IT"
-        }
-      }
-    ])
+      ]
+    })
   }
 };
 
@@ -105,6 +133,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
