@@ -48,6 +48,11 @@ export default function Services() {
 
       <h2 className="text-4xl font-bold text-center mb-16">Servizi</h2>
 
+      {/* ⭐ FRASE LOCAL SEO */}
+      <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-16">
+        3D WORK™ Enhanced AI è uno studio di rendering 3D con sede a Cesena, operativo in tutta Italia.
+      </p>
+
       <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-stretch">
         {items.map((s, i) => (
           <div
@@ -63,7 +68,3 @@ export default function Services() {
     </section>
   );
 }
-
-
-
-

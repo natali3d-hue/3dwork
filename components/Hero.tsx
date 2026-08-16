@@ -24,7 +24,7 @@ export default function Hero() {
 
         {/* ⭐ H2 SEO */}
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6 drop-shadow-[0_3px_6px_rgba(0,0,0,0.55)]">
-          Rendering 3D fotorealistici e ArchViz professionale a Cesena
+          Rendering 3D fotorealistici e ArchViz professionale 
         </h2>
 
         {/* ⭐ DESCRIZIONE BREVE */}
