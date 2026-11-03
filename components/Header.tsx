@@ -47,9 +47,14 @@ export default function Header() {
           <a href="/#studio" className="hover:text-gray-300 transition">Contatti</a>
 
           <div className="relative group">
-            <span className="hover:text-gray-300 transition font-semibold cursor-pointer pb-4 block">
+            <a 
+              href="/tour360-interno"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition font-semibold cursor-pointer pb-4 block"
+            >
               Tour 360°
-            </span>
+            </a>
 
             <div
               className="
@@ -63,16 +68,9 @@ export default function Header() {
                 href="/tour360-interno"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
+                className="px-4 py-2 hover:bg-white/10 text-sm text-white whitespace-nowrap"
               >
                 Interno
-              </a>
-
-              <a 
-                href="/tour360-esterno"
-                className="px-4 py-2 hover:bg-white/10 text-sm text-white"
-              >
-                Esterno
               </a>
             </div>
           </div>
@@ -102,7 +100,15 @@ export default function Header() {
           <a href="/#studio" onClick={() => setOpen(false)}>Contatti</a>
 
           <div className="flex flex-col">
-            <span className="font-semibold mb-2">Tour 360°</span>
+            <a 
+              href="/tour360-interno"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="font-semibold mb-2"
+            >
+              Tour 360°
+            </a>
 
             <a 
               href="/tour360-interno"
@@ -113,18 +119,9 @@ export default function Header() {
             >
               Interno
             </a>
-
-            <a 
-              href="/tour360-esterno"
-              onClick={() => setOpen(false)}
-              className="pl-4 py-1 text-white/80"
-            >
-              Esterno
-            </a>
           </div>
         </nav>
       )}
     </header>
   );
 }
-
