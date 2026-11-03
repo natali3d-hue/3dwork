@@ -57,7 +57,7 @@ export default function Hero() {
             preload="metadata"
             className="w-full h-auto object-cover max-h-[400px]"
           >
-            <source src="/demo-reel.mp4" type="video/mp4" />
+            <source src="/video.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
           </video>
         </div>
